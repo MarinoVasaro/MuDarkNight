@@ -10,10 +10,16 @@
 a.nav-link{
     color: #fff;
 }
-
+.nav-link:hover{
+    text-decoration:underline #fff;
+}
 
 html{
     cursor: url(../multimedia/imagenes/cursor.cur),
+    auto;
+}
+a, input,:hover{
+    cursor: url(../multimedia/imagenes/cursor-a.gif),
     auto;
 }
 
@@ -215,7 +221,14 @@ background-color: violet; }
     
 }
 
-
+.descargas_container:hover{
+    background-color: #c9c1c185;
+    transition: 0.3s;
+}
+.descargas_container img:hover{
+    transform: scale(1.02);
+    animation: .3s;
+}
 
 /* HTML INFORMACION */
 .container_informacion_servidor{
@@ -297,7 +310,10 @@ background-color: violet; }
     background:url(../multimedia/imagenes/boton-descarga.png) no-repeat;
     width: 316px;
     height: 119px;
-    
+}
+.boton_descarga:hover{
+    -webkit-transform:scale(1.03);transform:scale(1.03);
+    transition: 0.5s;
 }
 
 .boton_descarga a{
@@ -311,6 +327,10 @@ background-color: violet; }
     background:url(../multimedia/imagenes/boton-registro.png) no-repeat;
     width: 316px;
     height: 119px;
+}
+.boton_registro:hover{
+    -webkit-transform:scale(1.03);transform:scale(1.03);
+    transition: 0.5s;
 }
 .boton_registro a{
     display: block;
@@ -371,6 +391,10 @@ background-color: violet; }
     background: url(/multimedia/imagenes/ico-pin.png)no-repeat 6px 5px #26211f;
 }
 
+
+.formulario_login :focus::placeholder{
+    color: transparent;
+}
 
 
 .texto_login{

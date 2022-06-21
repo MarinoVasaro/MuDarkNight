@@ -229,6 +229,9 @@ background-color: violet; }
     transform: scale(1.02);
     animation: .3s;
 }
+.descargas_container div p{
+    padding-top: 10px;
+}
 
 /* HTML INFORMACION */
 .container_informacion_servidor{

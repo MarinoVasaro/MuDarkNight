@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mu DarkNight</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="multimedia/imagenes/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <!--Barra de navegacion (nav) -->    
+<nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img id="ir_arriba" class="logo_superior" src="multimedia/imagenes/logo-superior.png " alt="Logo de la pagina"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="descargas.html">Descargas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registro.html">Registrate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ranking.html">Ranking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="info.html">Informacion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--iCONOS DE REDES A LA DERECHA-->
+  <div class="icono_redes">
+    <a href="https://discord.com/" target="_blank"><img class="logos_deslizables" src="multimedia/imagenes/discord-ico.png" alt="Icono discord"></a>
+    <a href="https://www.facebook.com/" target="_blank"><img class="logos_deslizables" src="multimedia/imagenes/facebook-ico.png" alt="Icono discord"></a>
+    <a href="https://www.instagram.com" target="_blank"><img class="logos_deslizables" src="multimedia/imagenes/instagram-logo.png" alt="Logo instagram"></a>
+  </div>
+</nav>
+    </header>
+
+<main>
+    <!--Paneles izquierdos-->
+<div class="paneles_izquierdos">
+            <!--Top 5-->
+        <div class="top5">
+            <div class="cabezera_top5">
+                <h4>TOP 5</h4>
+                
+            </div>
+            <table class="tabla_top5">
+                <tr>              
+                  <th>Nombre</th>              
+                  <th>Reset</th>              
+                  <th>Raza</th>              
+                </tr>              
+                <tr>              
+                  <td>Flama</td>              
+                  <td>227</td>              
+                  <td><img src="multimedia/imagenes/dl.jpg" alt="DarkLord"></td>              
+                </tr>              
+                <tr>              
+                    <td>K70</td>              
+                    <td>219</td>              
+                    <td><img src="multimedia/imagenes/dw.jpg" alt="DarkWizard"></td>
+                </tr>              
+                <tr>              
+                    <td>TonyS</td>              
+                    <td>203</td>              
+                    <td><img src="multimedia/imagenes/dk.jpg" alt="DarkKing"></td>              
+                </tr>
+                <tr>              
+                    <td>TyMorrow</td>              
+                    <td>193</td>              
+                    <td><img src="multimedia/imagenes/sum.jpg" alt="Summoner"></td>              
+                </tr>
+                <tr>              
+                    <td>XxNAHU007xX</td>              
+                    <td>188</td>              
+                    <td><img src="multimedia/imagenes/mg.jpg" alt="MagicGladiator"></td>              
+                </tr>                        
+              </table>
+        </div>
+        <!-- Informacion del servidor tabla -->
+    <div class="cabezera_informacion">
+        <h4>Informacion del servidor</h4>
+    </div>
+    <div>
+        <table class="info_panel_izquierdo_tabla">
+            <tr>
+                <td>Version:</td>
+                <td>Seanson 17</td>
+            </tr>
+            <tr>
+                <td>Exp Normal:</td>
+                <td>1500x</td>
+            </tr>
+            <tr>
+                <td>Exp Vip:</td>
+                <td>2000x</td>
+            </tr>
+            <tr>
+                <td>Drop item:</td>
+                <td>60%</td>
+            </tr>
+            <tr>
+                <td>Drop Item Vip:</td>
+                <td>80%</td>
+            </tr>
+            <tr>
+                <td>Reset Lvl:</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>Borra stats:</td>
+                <td>si</td>
+            </tr>
+            <tr>
+                <td>Puntos por Reset:</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>Cuentas totales:</td>
+                <td>899</td>
+            </tr>
+            <tr>
+                <td>Personajes totales:</td>
+                <td>1833</td>
+            </tr>
+            <tr>
+                <td>Guilds totales:</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Usuarios Online:</td>
+                <td>28</td>
+            </tr>
+        </table>
+    </div>
+</div>
+    <!-- Contenido principal -->
+    <div class="contenido_index">
+        <!-- Boostrap carrousel -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./multimedia/imagenes/Carrousel-1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./multimedia/imagenes/Carrousel-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./multimedia/imagenes/carrousel-3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
+        <!-- Descargas cliente -->
+        <div class="descargas_cliente">
+            <div class="titulo_descargas">
+            <h4>Descargas</h4>
+        </div>
+          <div class="descargas_container">       
+            <div>
+                <p>Descarga el cliente Completo aqui</p>
+            </div>
+            <div>
+                <a href="https://www.mediafire.com/" target="_blank"><img src="multimedia/imagenes/mediafire.png" alt="Imagen descarga"></a>
+            </div>
+          </div>
+          <div class="descargas_container">
+            <div>
+                <p>Descarga el cliente Completo aqui</p>
+            </div>
+            <div>
+                <a href="https://www.mega.nz/" target="_blank"><img src="multimedia/imagenes/megaupload.png" alt="Imagen descarga"></a>
+            </div>
+          </div>
+          <div class="descargas_container">
+            <div>
+                <p>Descarga el cliente Completo sin sonido aqui</span>
+            </div>
+            <div>
+                <a href="https://www.mediafire.com/" target="_blank"><img src="multimedia/imagenes/mediafire.png" alt="Imagen descarga"></a>
+            </div>
+          </div>
+          <div class="descargas_container">
+            <div>
+                <p>Descarga el cliente Completo sin sonido aqui</span>
+            </div>
+            <div>
+                <a href="https://www.mega.nz/" target="_blank"><img src="multimedia/imagenes/megaupload.png" alt="Imagen descarga"></a>
+            </div>
+            
+          </div>
+        </div>
+          <!-- DRIVERS DESCARGAS -->
+        <div class="descargas_driver">
+          <div class="titulo_descargas">
+            <h4>Drivers</h4>
+          </div>
+          <div class="descargas_container">       
+            <div>
+                <p>DirectX 12</p>
+            </div>
+            <div>
+                <a href="https://www.microsoft.com/en-us/download/details.aspx?id=35" target="_blank"><img src="multimedia/imagenes/directx.jpg" alt="Imagen descarga"></a>
+            </div>
+          </div>
+          <div class="descargas_container">       
+            <div>
+                <p>Nvidia Drivers</p>
+            </div>
+            <div>
+                <a href="https://www.nvidia.com/Download/index.aspx?lang=en-us" target="_blank"><img src="multimedia/imagenes/nvidia.jpg" alt="Imagen descarga"></a>
+            </div>
+          </div>
+          <div class="descargas_container">       
+            <div>
+                <p>Intel Drivers</p>
+            </div>
+            <div>
+                <a href="https://www.intel.com/content/www/us/en/download-center/home.html" target="_blank"><img src="multimedia/imagenes/intel.jpg" alt="Imagen descarga"></a>
+            </div>
+          </div>
+          <div class="descargas_container">       
+            <div>
+                <p>AMD Drivers</p>
+            </div>
+            <div>
+                <a href="https://www.amd.com/en/support" target="_blank"><img src="multimedia/imagenes/amd.jpg" alt="Imagen descarga"></a>
+            </div>
+          </div>
+        </div>
+          <!-- DESCARGAS UTILIDADES -->
+        <div class="descargas_utilidades">
+            <div class="titulo_descargas">
+            <h4>Utilidades</h4>
+          </div>
+          <div class="descargas_container">       
+            <div>
+                <p>Microsoft.NET framework</p>
+            </div>
+            <div>
+                <a href="https://www.microsoft.com/en-us/download/details.aspx?id=17718" target="_blank"><img src="multimedia/imagenes/netframework.jpg" alt="Imagen descarga"></a>
+            </div>
+          </div>
+          <div class="descargas_container">       
+            <div>
+                <p>Visual C++ 2012</p>
+            </div>
+            <div>
+                <a href="https://www.mediafire.com/" target="_blank"><img src="multimedia/imagenes/visual.png" width="64px" height="64px" alt="Imagen descarga"></a>
+            </div>
+          </div>
+        </div>
+        <div class="requisitos">
+            <div class="container_informacion_servidor">
+                <div class="titulo_tabla_informacion">
+                    <span>Requisitos</span>
+               </div>
+                <!-- Tabla de requisitos (html de descargas) -->
+                    <table class="tabla_informacion_completa">
+                        <tr>
+                            <td></td>
+                            <td><b>Minimo</b></td>
+                            <td><b>Recomendado</b></td>
+                        </tr>
+                        <tr>
+                            <td>Procesador</td>
+                            <td>2.8GHz</td>
+                            <td>3.5GHz</td>
+                        </tr>
+                        <tr>
+                            <td>Memoria</td>
+                            <td>2GB</td>
+                            <td>4GB</td>
+                        </tr>
+                        <tr>
+                            <td>Sistema Operativo</td>
+                            <td>Windows 7 o superior</td>
+                            <td>Windows 11</td>
+                        </tr>
+                        <tr>
+                            <td>Placa video</td>
+                            <td>256 MB</td>
+                            <td>512 MB</td>
+                        </tr>
+                        <tr>
+                            <td>Internet</td>
+                            <td>1 Mbps (ADSL)</td>
+                            <td>2 Mbsps (ADSL/Fibra)</td>
+                        </tr>
+                    
+                    </table>
+               </div>
+        </div>
+</div>
+<!--Panel derechos-->
+    <!--Botones panel derecho-->
+<div class="paneles_derecho">
+    <div class="botones_derecha">
+    <div class="boton_descarga">
+        <a href="descargas.html">
+        Descargar cliente <br>
+        1.2GB
+        </a>
+    </div>
+<div class="boton_registro">
+    <a href="registro.html">
+        Registrate aca
+    </a>
+</div>
+</div>
+<div class="login_content_box">
+    <div class="formulario_login">
+        <input class="input-user" type="text" name="userid" id="userid" placeholder="Usuario" maxlength="19">
+        <input class="input-pw" type="password" name="userpass" id="userpass" placeholder="Contraseña" maxlength="16">
+        <input class="input-pin" type="password" name="userpin" id="userpin" placeholder="PIN" maxlength="4">
+    </div>
+    <div class="texto_login">
+        <div class="olvide.pass">
+            <a href="">Olvide mi contraseña</a>
+        </div>
+        <div class="olvide_pin">
+            <a href="">Olvide mi pin</a>
+        </div>
+    </div>
+    <div class="boton_login">
+        <button>
+        <input id="login-content-button-submit" type="submit" value="Entrar" alt="Entrar">
+    </button>
+    </div>
+</div>
+</div>
+</main>
+<!--PIE DE PAGINA-->
+<footer class="footer">
+    <section class="contenedor_informacion">
+        <!-- Informacion del footer -->
+            <div class="columna_uno">
+            <h4>Mas informacion del servidor</h4>
+           <p> MuDarkNight es un servidor MU Online gratuito para audiencia internacional. El servidor está utilizando la última versión del juego: la temporada 17, parte 3, que incluye todos los nuevos personajes, mapas, eventos, misiones, elementos y funciones.</p>
+            </div>
+        <!-- Boton ir arriba -->
+            <div class="boton_up">
+            <a href="#ir_arriba"><img src="multimedia/imagenes/boton_up.png" alt=""></a>
+            </div>
+        <!-- Redes sociales footer -->
+            <div class="columna_dos">
+            <h4>Redes sociales</h4>
+            <ul>
+                <li> <img src="multimedia/imagenes/instagram-logo.png" class="logo_footer"><a href="https://www.instagram.com" target="_blank"> Siguenos en Instagram</a></li>
+                <li> <img src="multimedia/imagenes/facebook-ico.png" class="logo_footer"><a href="https://www.facebook.com" target="_blank"> Siguenos en facebook</a></li>
+                <li> <img src="multimedia/imagenes/discord-ico.png" class="logo_footer"><a href="https://www.discord.com" target="_blank"> Unete a discord</a></li>
+            </ul>
+            </div>
+        <!-- Logo del juego footer -->
+            <div class="columna_tres">
+              <a href="index.html"><img src="multimedia/imagenes/logo-small.png"></a>
+            </div>
+        <!-- Copyright -->
+            <div class="bajo_footer">  
+               <p>Copyright © 2022 MuDarkNight</p> <a href="">Terminos y condiciones </a>
+               <a href="">Politica de privacidad</a>
+            </div>
+</section>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+</body>
+</html>

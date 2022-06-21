@@ -244,8 +244,7 @@ background-color: violet; }
 }
 .form-label{
     width: 56vw;
-    text-align: center;
-    padding-right: 30%;
+    padding-left: 20%;
     color: #fff;
 }
 .form-control{

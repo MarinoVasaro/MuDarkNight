@@ -2524,7 +2524,8 @@ textarea.form-control-lg {
   opacity: 0.5;
 }
 .form-check-input[disabled] ~ .form-check-label, .form-check-input:disabled ~ .form-check-label {
-  cursor: default;
+  cursor: url(../multimedia/imagenes/cursor.cur),
+    auto;
   opacity: 0.5;
 }
 
@@ -3856,7 +3857,8 @@ textarea.form-control-lg {
 .nav-link.disabled {
   color: var(--bs-nav-link-disabled-color);
   pointer-events: none;
-  cursor: default;
+  cursor: url(../multimedia/imagenes/cursor.cur),
+    auto;
 }
 
 .nav-tabs {

@@ -58,6 +58,20 @@ body{
     height: 107px;
 }
 
+/* MENU PRINCIPAL BOOSTRAP */
+.navbar-toggler{
+    background-color: #fff;
+    margin-right: 2rem;
+}
+.nav-link{
+    color: #fff !important;
+}
+.navbar{
+    font-size: 2rem;
+}
+
+
+
 
 
 /* Tabla de informacion izquierda */
@@ -152,6 +166,23 @@ main{
     box-shadow: 0 8px 32px 0 rgba( 92,111,152 );
     backdrop-filter: blur( 3px );
     -webkit-backdrop-filter: blur( 3px );
+}
+
+/* HTML INDEX */
+
+.accordion-button{
+    background-color:#212529 !important;
+}
+.accordion-button:not(.collapsed){
+    color: #fff;
+}
+
+.accordion-button{
+    color: #fff;
+}
+.accordion-body{
+    background-color: #141519;
+    color: #fff;
 }
 
 /* HTML RANKING  */
@@ -561,26 +592,7 @@ footer a {
     bottom: 0;
 }
 
-/* MOBILE  480px max*/
-@media  (max-width: 980px){
-   
-    .paneles_izquierdos{
-        display: none;
-    }
-    main{
-        flex-direction: column;
-    }
-    .contenido_index{
-        width: 100%;
-    }
-    .paneles_derecho{
-        flex-direction: row;
-        justify-content: space-between;
-        margin-left: 20vw;
-    }
-    .login_content_box{
-        margin-top:75px;
-}
+
 
 
 @media  (max-width: 480px){
@@ -597,10 +609,12 @@ footer a {
     .menu{
         flex-direction: column;
     }
+   
 
 .contenido_index{
     width: 100%;
     max-width: 1200px;
+    margin-top: 0;
 }
 
 .contenedor_informacion{
@@ -651,7 +665,26 @@ footer img{
 
 }
 a.nav-link{
-    background-color: #141519;
-    padding-left: 30px;
-    border-bottom: 1px dotted #fff; }
+    border-bottom: 1px dotted #fff;
 }
+a.nav-link:hover{
+    text-decoration: none;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

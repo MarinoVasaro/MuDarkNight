@@ -13,91 +13,115 @@
 <link rel="shortcut icon" href="multimedia/imagenes/logo.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <!--Barra de navegacion (nav) -->    
-<nav class="navbar navbar-expand-lg bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img id="ir_arriba" class="logo_superior" src="multimedia/imagenes/logo-superior.png " alt="Logo de la pagina"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="descargas.html">Descargas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="registro.html">Registrate</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ranking.html">Ranking</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="info.html">Informacion</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!--iCONOS DE REDES A LA DERECHA-->
-  <div class="icono_redes">
-    <a href="https://discord.com/" target="_blank"><img class="logos_deslizables" src="multimedia/imagenes/discord-ico.png" alt="Icono discord"></a>
-    <a href="https://www.facebook.com/" target="_blank"><img class="logos_deslizables" src="multimedia/imagenes/facebook-ico.png" alt="Icono discord"></a>
-    <a href="https://www.instagram.com" target="_blank"><img class="logos_deslizables" src="multimedia/imagenes/instagram-logo.png" alt="Logo instagram"></a>
-  </div>
-  </nav
-<!-- Contenido principal -->
-<main>
-    <!--Paneles izquierdos-->
-<div class="paneles_izquierdos">
-            <!--Top 5-->
-        <div class="top5">
-            <div class="cabezera_top5">
-                <h4>TOP 5</h4>
-                
+  <header class="header">
+    <!--Barra de navegacion (nav) -->    
+        <nav class="navbar navbar-expand-lg bg-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img id="ir_arriba" class="logo_superior" src="multimedia/imagenes/logo-superior.png " alt="Logo de la pagina"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="descargas.html">Descargas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registro.html">Registrate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ranking.html">Ranking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="info.html">Informacion</a>
+            </li>
+            <div class="login_content_box  d-md-block d-lg-none d-block d-sm-none ">
+              <div class="formulario_login">
+                  <input class="input-user" type="text" name="userid" id="userid" placeholder="Usuario" maxlength="19">
+                  <input class="input-pw" type="password" name="userpass" id="userpass" placeholder="Contraseña" maxlength="16">
+                  <input class="input-pin" type="password" name="userpin" id="userpin" placeholder="PIN" maxlength="4">
+              </div>
+              <div class="texto_login">
+                  <div class="olvide.pass">
+                      <a href="">Olvide mi contraseña</a>
+                  </div>
+                  <div class="olvide_pin">
+                      <a href="">Olvide mi pin</a>
+                  </div>
+              </div>
+              <div class="boton_login">
+                  <button>
+                  <input id="login-content-button-submit" type="submit" value="Entrar" alt="Entrar">
+              </button>
+              </div>
             </div>
-            <table class="tabla_top5">
-                <tr>              
-                  <th>Nombre</th>              
-                  <th>Reset</th>              
-                  <th>Raza</th>              
-                </tr>              
-                <tr>              
-                  <td>Flama</td>              
-                  <td>227</td>              
-                  <td><img src="multimedia/imagenes/dl.jpg" alt="DarkLord"></td>              
-                </tr>              
-                <tr>              
-                    <td>K70</td>              
-                    <td>219</td>              
-                    <td><img src="multimedia/imagenes/dw.jpg" alt="DarkWizard"></td>
-                </tr>              
-                <tr>              
-                    <td>TonyS</td>              
-                    <td>203</td>              
-                    <td><img src="multimedia/imagenes/dk.jpg" alt="DarkKing"></td>              
-                </tr>
-                <tr>              
-                    <td>TyMorrow</td>              
-                    <td>193</td>              
-                    <td><img src="multimedia/imagenes/sum.jpg" alt="Summoner"></td>              
-                </tr>
-                <tr>              
-                    <td>XxNAHU007xX</td>              
-                    <td>188</td>              
-                    <td><img src="multimedia/imagenes/mg.jpg" alt="MagicGladiator"></td>              
-                </tr>                        
-              </table>
+          </ul>
         </div>
-        <!-- Informacion del servidor tabla -->
-    <div class="cabezera_informacion">
-        <h4>Informacion del servidor</h4>
+      </div>
+    
+      
+      <!--iCONOS DE REDES A LA DERECHA-->
+    <div class="icono_redes">
+      <a href="https://discord.com/" target="_blank"><img class="logos_deslizables" src="multimedia/imagenes/discord-ico.png" alt="Icono discord"></a>
+      <a href="https://www.facebook.com/" target="_blank"><img class="logos_deslizables" src="multimedia/imagenes/facebook-ico.png" alt="Icono discord"></a>
+      <a href="https://www.instagram.com" target="_blank"><img class="logos_deslizables" src="multimedia/imagenes/instagram-logo.png" alt="Logo instagram"></a>
     </div>
-    <div>
-        <table class="info_panel_izquierdo_tabla">
-            <tr>
+    </nav>
+</header>
+<!-- Contenido principal -->
+<main class="container">
+    <section class="row">
+        <!-- ===========================
+        =============Panel izquierdo=========== -->
+        <aside class="col-3 panel-left">
+          <!-- ========TOP5 -->
+          <div class="top5">
+            <div class="tittle-info">
+              <h4>TOP 5</h4>
+            </div>
+            <table class="table table-dark table-hover">
+              <tr>
+                <th>Nombre</th>
+                <th>Reset</th>
+                <th>Raza</th>
+              </tr>
+              <tr>
+                <td>TonyS</td>
+                <td>245</td>
+                <td><img src="./multimedia/imagenes/dl.jpg" alt="DarkLord"></td>
+              </tr>
+              <tr>
+                <td>K70</td>
+                <td>230</td>
+                <td><img src="./multimedia/imagenes/dk.jpg" alt="DarkKing"></td>
+              </tr>
+              <tr>
+                <td>Disp0</td>
+                <td>224</td>
+                <td><img src="./multimedia/imagenes/mg.jpg" alt="Magic Gladiator"></td>
+              </tr>
+              <tr>
+                <td>Fl4m4</td>
+                <td>199</td>
+                <td><img src="./multimedia/imagenes/sum.jpg" alt="Summoner"> </td>
+              </tr>
+              <tr>
+                <td>Macros!</td>
+                <td>185</td>
+                <td><img src="./multimedia/imagenes/dw.jpg" alt="DarkWizard"></td>
+              </tr>
+            </table>
+          </div>
+          <!-- Tabla informacion -->
+          <div class="info-table">
+            <div class="tittle-info">
+              <h4>informacion</h4>
+            </div>
+            <table class="table table-dark table-hover">
+              <tr>
                 <td>Version:</td>
                 <td>Seanson 17</td>
             </tr>
@@ -145,11 +169,15 @@
                 <td>Usuarios Online:</td>
                 <td>28</td>
             </tr>
-        </table>
-    </div>
-</div>
-    <div class="contenido_index">
-        <!-- Boostrap carrousel -->
+            </table>
+  
+          </div>
+  
+        </aside>
+        <!-- ===========================
+        =============Panel Medio=========== -->
+        <section class="col-7 col-lg-7 col-sm-12 col-md-12 contenido_index">
+                     <!-- Boostrap carrousel -->
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -348,45 +376,12 @@
                 </tr>
             </table>
        </div>
-    </div>
-<!--Paneles derechos-->   
-<div class="paneles_derecho">
-    <!--Botones panel derecho-->
-    <div class="botones_derecha">
-    <div class="boton_descarga">
-        <a href="descargas.html">
-        Descargar cliente <br>
-        1.2GB
-        </a>
-    </div>
-<div class="boton_registro">
-    <a href="registro.html">
-        Registrate aca
-    </a>
-</div>
-</div>
-<!--Login -->
-<div class="login_content_box">
-    <div class="formulario_login">
-        <input class="input-user" type="text" name="userid" id="userid" placeholder="Usuario" maxlength="19">
-        <input class="input-pw" type="password" name="userpass" id="userpass" placeholder="Contraseña" maxlength="16">
-        <input class="input-pin" type="password" name="userpin" id="userpin" placeholder="PIN" maxlength="4">
-    </div>
-    <div class="texto_login">
-        <div class="olvide.pass">
-            <a href="">Olvide mi contraseña</a>
-        </div>
-        <div class="olvide_pin">
-            <a href="">Olvide mi pin</a>
-        </div>
-    </div>
-    <div class="boton_login">
-        <button>
-        <input id="login-content-button-submit" type="submit" value="Entrar" alt="Entrar">
-    </button>
-    </div>
-</div>
-</div>
+      </section>
+            <!-- ===========================
+        =============Panel Derecho=========== -->
+        <aside class="col-2 panel-right">
+  
+        </aside>
 </main>
 <!--PIE DE PAGINA-->
 <footer class="footer">

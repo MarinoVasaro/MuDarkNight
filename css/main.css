@@ -91,11 +91,12 @@ body{
 }
 
 .tittle-info{
-    background: url(/multimedia/imagenes/top5.jpg);
+    background: url(../multimedia/imagenes/top5.jpg);
     height: 50px;
     color: #fff;
     text-align: center;
     padding-top:10px ;
+    margin-top: 10px;
 
 }
 
@@ -123,9 +124,13 @@ main{
     -webkit-backdrop-filter: blur( 3px );
     max-width: 1000px;
     padding: 0 !important;
+    
 }
 
 /* HTML INDEX */
+.carousel img{
+  
+}
 .container-fluid{
     margin-top: 25px;
 }
@@ -162,12 +167,6 @@ main{
     padding-left:5vw;
 
 }
-.div2_ranking { grid-area: 2 / 1 / 7 / 2;
-background-color: green; }
-.div3_ranking { grid-area: 2 / 2 / 7 / 3;
-background-color: blue; }
-.div4_ranking { grid-area: 2 / 3 / 7 / 4;
-background-color: violet; }
 
 
 /* HTML DESCARGAS */
@@ -322,12 +321,8 @@ background-color: violet; }
     margin-top: 30px;
  }
 
-
-
-
-
-
-
+ /* ===========BOTONES DERECHOS */
+    
 
 /* Login */
 .login_content_box{
@@ -362,17 +357,17 @@ background-color: violet; }
     color: #fff;
 }
 .input-user{
-    background: url(/multimedia/imagenes/ico-user.png)no-repeat 6px 5px #26211f;
+    background: url(../multimedia/imagenes/ico-user.png)no-repeat 6px 5px #26211f;
 }
 .input_container{
     margin-bottom: 15px;
 }
 
 .input-pw{
-    background: url(/multimedia/imagenes/ico-pw.png)no-repeat 6px 5px #26211f;
+    background: url(../multimedia/imagenes/ico-pw.png)no-repeat 6px 5px #26211f;
 }
 .input-pin{
-    background: url(/multimedia/imagenes/ico-pin.png)no-repeat 6px 5px #26211f;
+    background: url(../multimedia/imagenes/ico-pin.png)no-repeat 6px 5px #26211f;
 }
 
 
@@ -406,6 +401,16 @@ background-color: violet; }
     margin-left:4px;
     width: 202px;
 }
+.login-aside{
+    background-color: #212529;
+    padding-bottom: 10px;
+}
+
+/* +===========PUBLICIDAD========= */
+ .publicidad{
+    margin-top: 10px;
+    margin-left: 20%;
+ }
 
 
 

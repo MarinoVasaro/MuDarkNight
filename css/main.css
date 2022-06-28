@@ -115,6 +115,7 @@ body{
 main{
     display: flex;
     flex-direction: row;
+    margin-top: 100px;
 }
 
 .contenido_index{
@@ -124,6 +125,7 @@ main{
     -webkit-backdrop-filter: blur( 3px );
     max-width: 1000px;
     padding: 0 !important;
+    margin-top: 10px;
     
 }
 
@@ -555,7 +557,13 @@ footer a {
 .nav-item{
     font-size: smaller;
 }
+main{
+    margin-top: 0;
+}
+.icono_redes{
+    display: none;
 
+}
 }
 
 
@@ -563,6 +571,7 @@ footer a {
     body{
         font-size:small;
         max-width: 576px;
+    
     }
     .panel-left{
         display: none;
@@ -576,8 +585,9 @@ footer a {
 .icono_redes{
     display: none;
 }
-
-   
+main{
+    margin-top: 0;
+}
 
 .contenido_index{
     width: 100%;

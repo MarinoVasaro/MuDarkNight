@@ -29,7 +29,7 @@ a:active {
 
 body{
     width: 100%;
-    background: url(../multimedia/imagenes/fondo.jpg)
+    background: url(../multimedia/imagenes/fondo.jpeg)
     center top fixed;
     background-size: cover;
     width: auto;
@@ -91,7 +91,7 @@ body{
 }
 
 .tittle-info{
-    background: url(../multimedia/imagenes/top5.jpg);
+    background: url(../multimedia/imagenes/top5.jpeg);
     height: 50px;
     color: #fff;
     text-align: center;
@@ -343,6 +343,9 @@ main{
  .reglas ul li{
     list-style-type: none;
  }
+ .reglas ul{
+    padding: 5px;
+ }
 
 .castigo{
     background-color: red;
@@ -537,7 +540,7 @@ footer a {
 
 .footer{
     width: 100%;
-    background: url(../multimedia/imagenes/bajo-fondo.jpg);
+    background: url(../multimedia/imagenes/bajo-fondo.jpeg);
     color: white;
     padding-top: 15px;
     padding: 10px;

@@ -7,6 +7,13 @@
 #carouselExampleControls{
     margin-bottom: 5px;
 }
+
+
+/*=============== NAVBAR Boostrap=========== */
+
+.navbar-nav{
+    justify-content: space-around;
+}
 a.nav-link{
     color: #fff;
 }
@@ -37,6 +44,7 @@ body{
  /*Logos de redes deslizables a la derecha*/
 
  .icono_redes{
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -113,8 +121,6 @@ body{
 /* FIN PANEL IZQUIERDO */
 
 main{
-    display: flex;
-    flex-direction: row;
     margin-top: 100px;
 }
 
@@ -364,15 +370,22 @@ main{
     
 
 /* Login */
+
+.contenedor-login-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .login_content_box{
     font-size: 12px;
     font-family: tahoma;
     line-height: 16px;
     margin-top: 10px;
-    padding-right: 30px;
     padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     width: min-content;
-    padding-left: 20%;
     height: max-content;
 }
 
@@ -571,6 +584,10 @@ main{
     body{
         font-size:small;
         max-width: 576px;
+    }
+    .container{
+        --bs-gutter-x: 0 !important;
+        --bs-gutter-y: 0 !important;
     
     }
     .panel-left{

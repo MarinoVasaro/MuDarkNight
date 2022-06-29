@@ -13,7 +13,7 @@
 <link rel="shortcut icon" href="multimedia/imagenes/logo.ico" type="image/x-icon">
 </head>
 <body>
-  <header class="header">
+  <header class="container">
     <!--Barra de navegacion (nav) -->    
         <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
@@ -22,7 +22,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mr-auto ">
+          <ul class="navbar-nav mr-auto w-100 ">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
             </li>
@@ -38,24 +38,26 @@
             <li class="nav-item">
               <a class="nav-link" href="info.html">Informacion</a>
             </li>
-            <div class="login_content_box  d-md-block d-lg-none d-block d-sm-none ">
-              <div class="formulario_login">
-                  <input class="input-user" type="text" name="userid" id="userid" placeholder="Usuario" maxlength="19">
-                  <input class="input-pw" type="password" name="userpass" id="userpass" placeholder="Contraseña" maxlength="16">
-                  <input class="input-pin" type="password" name="userpin" id="userpin" placeholder="PIN" maxlength="4">
-              </div>
-              <div class="texto_login">
-                  <div class="olvide.pass">
-                      <a href="">Olvide mi contraseña</a>
-                  </div>
-                  <div class="olvide_pin">
-                      <a href="">Olvide mi pin</a>
-                  </div>
-              </div>
-              <div class="boton_login">
-                  <button>
-                  <input id="login-content-button-submit" type="submit" value="Entrar" alt="Entrar">
-              </button>
+            <div class="contenedor-login-nav">
+              <div class="login_content_box  d-md-block d-lg-none d-block d-sm-none ">
+                <div class="formulario_login">
+                    <input class="input-user" type="text" name="userid" id="userid" placeholder="Usuario" maxlength="19">
+                    <input class="input-pw" type="password" name="userpass" id="userpass" placeholder="Contraseña" maxlength="16">
+                    <input class="input-pin" type="password" name="userpin" id="userpin" placeholder="PIN" maxlength="4">
+                </div>
+                <div class="texto_login">
+                    <div class="olvide.pass">
+                        <a href="">Olvide mi contraseña</a>
+                    </div>
+                    <div class="olvide_pin">
+                        <a href="">Olvide mi pin</a>
+                    </div>
+                </div>
+                <div class="boton_login">
+                    <button>
+                    <input id="login-content-button-submit" type="submit" value="Entrar" alt="Entrar">
+                </button>
+                </div>
               </div>
             </div>
           </ul>

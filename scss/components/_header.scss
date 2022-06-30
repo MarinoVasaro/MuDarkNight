@@ -1,0 +1,67 @@
+/*=============== NAVBAR Boostrap=========== */
+
+.navbar-nav{
+    justify-content: space-around;
+}
+a.nav-link{
+    color: #fff;
+}
+.nav-link:hover{
+    text-decoration:underline #fff;
+}
+
+.navbar-toggler{
+    background-color: #fff;
+    margin-right: 2rem;
+}
+.nav-link{
+    color: #fff !important;
+    padding-left: 60px;
+}
+.navbar{
+    font-size: 2rem;
+}
+.show{
+    background-color: #212529;
+    border-top:dotted 1px #fff ;
+}
+.show li{
+    border-bottom: dotted 1px #fff;
+}
+.container-fluid{
+    padding: 0 !important;
+}
+
+.logo_superior{
+    width: 290px;
+    height: 107px;
+}
+
+@media  (max-width: 993px){
+    .nav-item{
+        font-size: smaller;
+    }
+    
+    
+}
+@media  (max-width: 576px){
+    .container{
+        --bs-gutter-x: 0 !important;
+        --bs-gutter-y: 0 !important;
+    }
+    .nav-link{
+        border-bottom: 1px dotted #fff;
+    }
+    a.nav-link:hover{
+        text-decoration: none;
+    
+    }    
+}
+
+@media (max-width: 393px){
+    .logo_superior{
+        display: none;}
+}
+
+
+

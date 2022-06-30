@@ -1,0 +1,31 @@
+.panel-left{
+    max-width: 300px;
+}
+
+.tittle-info{
+    background: url(../multimedia/imagenes/top5.jpeg);
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    padding-top:10px ;
+    margin-top: 10px;
+
+}
+
+.top5 img{
+    width:95%;
+    border-radius: 10px;
+    border: groove 2px;
+    width: 40px ;
+    height: 40px ;
+}
+
+@media  (max-width: 993px){
+    .panel-left{
+        display: none;
+    }
+}
+@media  (max-width: 576px){
+    .panel-left{display: none;
+    }
+}

@@ -1,0 +1,84 @@
+@import 'base/variables.scss';
+@import 'components/header';
+@import 'components/column-left';
+@import 'components/column-mid';
+@import 'components/column-right';
+@import 'components/footer';
+
+
+/* =========CONTENIDO GENERAL APLICADO A TODA LA PAGINA============ */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Candara', 'Verdana';
+    box-sizing: border-box;
+}
+
+html{
+    cursor: url(../multimedia/imagenes/cursor.cur),
+    auto;
+}
+
+a, input, button:hover{
+    cursor: url(../multimedia/imagenes/cursor-a.gif),
+    auto;
+}
+
+a:active {
+    Color:none
+}
+
+body{
+    width: 100%;
+    background: url(../multimedia/imagenes/fondo.jpeg)
+    center top fixed;
+    background-size: cover;
+    width: auto;
+}
+
+/*=================Logos de redes deslizables a la derecha*===========*/
+
+.icono_redes{
+	margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 120px;
+    width: 252px;
+    text-align: left;
+    margin-left:81% ;
+    word-wrap: break-word;
+}
+.logos_deslizables{
+	width: 45px;
+	height: 45px;
+	border-radius: 28px;
+}
+
+@media  (max-width: 993px){
+	.icono_redes{
+		display: none;
+	}
+	main{
+        margin-top: 0;
+    }
+}
+@media  (max-width: 576px){
+
+	body{
+		font-size:small;
+		max-width: 576px;
+	}
+	main{
+        margin-top: 0;
+    }
+	.icono_redes{
+		display: none;
+	}
+	.contenido_index{
+        width: 100%;
+        max-width: 576px;
+        margin-top: 0;
+    }
+}

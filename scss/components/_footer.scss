@@ -1,0 +1,136 @@
+
+ .contenedor_informacion{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1.5fr 0.5fr;
+    grid-template-rows: 9fr 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.columna_uno{
+    max-width: 30vw;
+    margin-left: 2.5vw;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.columna_uno h4{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+
+}
+
+.columna_uno p {
+    font-size: 15px;
+    color: rgb(215, 215, 250);
+    margin-top: 20px;
+}
+.boton_up{
+    grid-area: 1 / 2 / 2 / 3;
+    padding-left:15%;
+}
+.boton_up img{
+    transform: scale(1.2);
+}
+.columna_dos{
+    max-width: 20vw;
+    grid-area: 1 / 3 / 2 / 4;
+    padding-left:20%; 
+}
+.columna_dos h4{
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+.columna_dos ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 2px;
+}
+.columna_dos a{
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.logo_footer{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px; 
+}
+
+.columna_dos li{
+    margin-top: 10px;
+}
+
+.columna_tres{
+    padding-top: 7vh;
+    padding-right: vw;
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.bajo_footer{
+    grid-area: 2 / 1 / 3 / 5;
+    display: flex;
+    justify-content: center;   
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(92,111,152);
+}
+
+.bajo_footer a{
+    margin-left: 4px;
+}
+
+.footer{
+    width: 100%;
+    background: url(../multimedia/imagenes/bajo-fondo.jpeg);
+    color: white;
+    padding-top: 15px;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+}
+
+@media  (max-width: 576px){
+    .contenedor_informacion{
+        display: grid;
+        grid-template-columns: 2fr 0.5fr 2fr;
+        grid-template-rows: 9fr 2fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .columna_uno{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .boton_up{
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .boton_up{
+        transform: scale(0.8);
+    }
+    .columna_dos{
+        grid-area: 1 / 3 / 2 / 4;
+        padding-left: 15%;
+        margin: 0;
+        width: 30vw;
+    }
+    .columna_tres{
+        display: none;
+    }
+    .bajo_footer{
+        grid-area: 2 / 1 / 3 / 4;
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+        bottom: 0%;
+    }
+    footer img{
+        transform: scale(0.9);
+    }
+   
+
+}

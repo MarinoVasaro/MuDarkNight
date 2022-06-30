@@ -1,0 +1,234 @@
+/* ================Aplicado a todos los html columna del medio======== */
+main{
+    margin-top: 100px;
+}
+
+.contenido_index{
+    background: #141519;
+    box-shadow: 0 8px 32px 0 rgba( 92,111,152 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    max-width: 1000px;
+    padding: 0 !important;
+    margin-top: 10px;
+    
+}
+
+/* ============================
+============ INDEX.HTML========= */
+.container-fluid{
+    margin-top: 25px;
+}
+.accordion-button{
+    background-color:#212529 !important;
+}
+.accordion-button:not(.collapsed){
+    color: #fff;
+}
+
+.accordion-button{
+    color: #fff;
+}
+.accordion-body{
+    background-color: #141519;
+    color: #fff;
+}
+/* ============================
+============  FIN INDEX.HTML========= */
+
+/* ============================
+============  DESCARGAS.HTML========= */
+
+.descargas_cliente, .descargas_driver, .descargas_utilidades{
+    margin-bottom: 1px;
+}
+
+.titulo_descargas{
+    height: 50px;
+    text-align: center;
+    background-color: #232C3A;
+    color: #ddd;
+    padding-top:10px;
+    padding-bottom: 40px;
+    font-weight: 900;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.descargas_container, .drivers_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #ddd;
+    width:70%;
+    align-items: center;
+    background-color: #141519;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    padding-left:10%;
+    padding-right: 8%;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-top: 2px;
+
+}
+.descargas_container img{
+    border-radius:28px;
+    
+}
+
+.descargas_container:hover{
+    background-color: #c9c1c185;
+    transition: 0.3s;
+}
+.descargas_container img:hover{
+    transform: scale(1.02);
+    animation: .3s;
+}
+
+/* ============================
+============   FIN DESCARGAS.HTML========= */
+
+/* ============================
+============  REGISTRO.HTML========= */
+
+.mb-3{
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px; 
+    padding-bottom: 10px;
+    width: 70%;
+    
+}
+.form-select{
+    width: 42%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;   
+    margin-top: 15px;
+}
+.form-label{
+    width: 56vw;
+    padding-left: 20%;
+    color: #fff;
+}
+.form-control{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 0;
+}
+
+.btn-primary{
+    background-color:#5C6F98;
+    border-color: transparent;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+
+/* ============================
+============  FIN REGISTRO.HTML========= */
+
+/* ============================
+============  INFO.HTML========= */
+
+    /* LA TABLA DE REQUISITOS EN LA SECCION DESCARGAS FUE REUTILIZADA DE AQUI */
+.container_informacion_servidor{
+    display: table-row-group;
+    vertical-align: middle;
+
+}
+.titulo_tabla_informacion{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    background-color: #232C3A;
+    padding: 20px;
+    color: #fff;
+}
+.tabla_informacion_completa{
+    border-collapse: collapse;
+}
+
+.tabla_informacion_completa td{
+    table-layout: fixed;
+    text-align: center;
+    margin-left: 3vw;
+    width: 100vw;
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: #fff;
+}
+.tabla_informacion_completa tr:nth-child(odd){
+    background-color: #252f3f;;
+}
+.tabla_informacion_completa tr:nth-child(even){
+    background-color: #5D6D7E;
+}
+.titulo_tabla_chaos{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    background-color: #232C3A;
+    padding: 35px;
+    color: #fff;
+
+}
+.titulo_tabla_party{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    background-color: #232C3A;
+    padding: 20px;
+    color: #fff;
+}
+.titulo_tabla_comandos{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    background-color: #232C3A;
+    padding: 20px;
+    color: #fff;
+}
+ .requisitos{
+    margin-top: 30px;
+ }
+
+
+ /* ==========HTML REGLAS=========== */
+ .contenido_index-guia{
+    overflow-y: scroll;
+    height:1000px; 
+ }
+ .reglas{
+    color: #fff;
+ }
+ .reglas h4{
+    text-align: center;
+    padding: 15px 0 15px 0;
+    background-color: #1E2024;
+ }
+ .titulo-guias{
+    background-color: #1E2024;
+    text-align: center;
+ }
+ .reglas p{
+    padding-left: 5px;
+ }
+ .reglas ul li{
+    list-style-type: none;
+ }
+ .reglas ul{
+    padding: 5px;
+ }
+
+.castigo{
+    background-color: red;
+}
+.fin-reglas{
+    background-color: #1E2024;
+    border: 1px dotted #fff;
+}

@@ -111,6 +111,10 @@ main {
   margin-top: 10px;
 }
 
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+
 /* ============================
 ============ INDEX.HTML========= */
 .container-fluid {
@@ -585,6 +589,11 @@ footer a {
   }
   footer img {
     transform: scale(0.9);
+  }
+}
+@media (max-width: 280px) {
+  .boton_up {
+    display: none;
   }
 }
 /* =========CONTENIDO GENERAL APLICADO A TODA LA PAGINA============ */

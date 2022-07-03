@@ -43,9 +43,25 @@ a.nav-link {
   height: 107px;
 }
 
+/* LOGIN DEL MENU DESPLEGABLE */
+.contenedor-login-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
 @media (max-width: 993px) {
   .nav-item {
     font-size: smaller;
+  }
+  .contenedor-login-nav {
+    display: flex;
+  }
+}
+@media (max-width: 765px) {
+  .contenedor-login-nav {
+    display: flex;
   }
 }
 @media (max-width: 576px) {
@@ -58,6 +74,9 @@ a.nav-link {
   }
   a.nav-link:hover {
     text-decoration: none;
+  }
+  .contenedor-login-nav {
+    display: flex;
   }
 }
 @media (max-width: 393px) {
@@ -352,12 +371,6 @@ main {
 
 /* EN ESTE LOGIN SE ENCUENTRAN LOS ESTILOS DEL LOGIN DE LA DERECHA Y EL QUE ESTA EN EL MENU DESPLEGABLE */
 /* ==========LOGIN=========== */
-.contenedor-login-nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 .login_content_box {
   font-size: 12px;
   font-family: tahoma;

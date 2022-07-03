@@ -1,3 +1,7 @@
+.panel-right{
+    padding-left: 25px;
+}
+
 /* EN ESTE LOGIN SE ENCUENTRAN LOS ESTILOS DEL LOGIN DE LA DERECHA Y EL QUE ESTA EN EL MENU DESPLEGABLE */
 
 /* ==========LOGIN=========== */
@@ -17,7 +21,7 @@
     padding-left: 20px;
     padding-right: 20px;
     width: min-content;
-    height: max-content;
+    height: auto;
 }
 
 .login_content_box input{

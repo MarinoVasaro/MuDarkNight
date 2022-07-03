@@ -67,6 +67,7 @@ a.nav-link {
 }
 .panel-left {
   max-width: 300px;
+  padding-right: 25px;
 }
 
 .tittle-info {
@@ -345,6 +346,10 @@ main {
   border: 1px dotted #fff;
 }
 
+.panel-right {
+  padding-left: 25px;
+}
+
 /* EN ESTE LOGIN SE ENCUENTRAN LOS ESTILOS DEL LOGIN DE LA DERECHA Y EL QUE ESTA EN EL MENU DESPLEGABLE */
 /* ==========LOGIN=========== */
 .contenedor-login-nav {
@@ -362,7 +367,7 @@ main {
   padding-left: 20px;
   padding-right: 20px;
   width: min-content;
-  height: max-content;
+  height: auto;
 }
 
 .login_content_box input {
@@ -564,6 +569,9 @@ footer a {
   }
   .columna_uno {
     grid-area: 1/1/2/2;
+  }
+  .columna_uno h4 {
+    display: none;
   }
   .boton_up {
     grid-area: 1/2/2/3;

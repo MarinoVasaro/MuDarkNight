@@ -1,4 +1,9 @@
 /*=============== NAVBAR Boostrap=========== */
+header {
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 5px;
+}
+
 .navbar-nav {
   justify-content: space-around;
 }
@@ -365,6 +370,13 @@ main {
   border: 1px dotted #fff;
 }
 
+/* ITEM SHOP */
+.main-shop h1 {
+  text-align: center;
+  margin-top: 2rem;
+  color: #fff;
+}
+
 .panel-right {
   padding-left: 25px;
 }
@@ -454,6 +466,33 @@ main {
 .login-aside {
   background-color: #212529;
   padding-bottom: 10px;
+}
+
+/* BOTON DE ITEM SHOP */
+.item-shop {
+  width: max-content;
+}
+
+.item-shop h6 {
+  background: url(/multimedia/imagenes/boton-descarga.png) no-repeat;
+  height: 114px;
+  width: 315px;
+  padding: 3rem 0 0 2rem;
+  font-size: x-large;
+  color: #fff;
+}
+
+.item-shop a {
+  text-decoration: none;
+}
+
+.item-shop:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.item-shop a:focus {
+  text-decoration: none;
 }
 
 /* ===============Publicidad============= */

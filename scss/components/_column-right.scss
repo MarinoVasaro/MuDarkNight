@@ -87,6 +87,30 @@
     padding-bottom: 10px;
 }
 
+/* BOTON DE ITEM SHOP */
+.item-shop{
+    width: max-content;
+}
+
+.item-shop h6{
+    background: url(/multimedia/imagenes/boton-descarga.png)no-repeat ;
+    height: 114px;
+    width: 315px;
+    padding: 3rem 0 0 2rem;
+    font-size: x-large;
+    color: #fff;
+}
+.item-shop a{
+    text-decoration: none;
+}
+.item-shop:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
+.item-shop a:focus{
+    text-decoration: none;
+}
+
 
 
 
@@ -99,6 +123,7 @@
     .panel-right{
         display: none;
     }
+    
 }
 @media  (max-width: 576px){
     .panel-right{display: none;

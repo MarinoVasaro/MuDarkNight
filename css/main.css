@@ -377,6 +377,36 @@ main {
   color: #fff;
 }
 
+.card {
+  margin-left: 1rem;
+  transform: scale(0.8);
+}
+.card .btn-primary {
+  width: auto;
+  margin-bottom: 0;
+  margin-left: 1.5rem;
+}
+
+.card-body {
+  background: #141519;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.card-text {
+  line-height: 25px;
+}
+.card-text input {
+  margin: 2px 0 2px 0;
+}
+
+@media (max-width: 496px) {
+  .main-shop .card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+  }
+}
 .panel-right {
   padding-left: 25px;
 }

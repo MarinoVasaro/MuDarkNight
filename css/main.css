@@ -371,10 +371,10 @@ main {
 }
 
 /* ITEM SHOP */
-.main-shop h1 {
-  text-align: center;
-  margin-top: 2rem;
-  color: #fff;
+.botones-shop {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -405,6 +405,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
+    width: 18rem !important;
   }
 }
 .panel-right {

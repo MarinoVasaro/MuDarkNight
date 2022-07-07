@@ -247,15 +247,6 @@ main {
   margin-top: 0;
 }
 
-.btn-primary {
-  background-color: #5C6F98;
-  border-color: transparent;
-  width: 120px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5px;
-}
-
 /* ============================
 ============  FIN REGISTRO.HTML========= */
 /* ============================
@@ -518,6 +509,9 @@ main {
 }
 
 .item-shop:hover {
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -moz-transform: scale(1.05);
   transform: scale(1.05);
   transition: 0.3s;
 }
@@ -687,6 +681,17 @@ footer a {
     display: none;
   }
 }
+/* BOTONES DE REGISTRO */
+.btn-primary {
+  background-color: #5C6F98;
+  border-color: transparent;
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+/* FIN BOTONES REGISTRO */
 /* =========CONTENIDO GENERAL APLICADO A TODA LA PAGINA============ */
 * {
   margin: 0;

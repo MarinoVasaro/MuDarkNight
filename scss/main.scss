@@ -4,9 +4,13 @@
 @import 'components/column-mid';
 @import 'components/column-right';
 @import 'components/footer';
+@import 'base/extends';
+@import 'base/mapas';
+@import 'base/mixins';
 
 
-/* =========CONTENIDO GENERAL APLICADO A TODA LA PAGINA============ */
+
+/* =========CONTENIDO GENERAL APLICADO A TODA LA PAGINA============ */ 
 
 *{
     margin: 0;

@@ -1,0 +1,7 @@
+@mixin animacion ($aumentar){
+    -webkit-transform: $aumentar;
+    -o-transform: $aumentar;
+    -moz-transform:$aumentar;
+    transform:$aumentar;
+}
+

@@ -1,4 +1,5 @@
 /* ================Aplicado a todos los html columna del medio======== */
+@import '../base/mapas';
 main{
     margin-top: 100px;
 }
@@ -33,7 +34,7 @@ main{
     color: #fff;
 }
 .accordion-body{
-    background-color: #141519;
+    background-color: map-get($premium, fondo );
     color: #fff;
 }
 /* ============================
@@ -49,7 +50,7 @@ main{
 .titulo_descargas{
     height: 50px;
     text-align: center;
-    background-color: #232C3A;
+    background-color: $coloruno;
     color: #ddd;
     padding-top:10px;
     padding-bottom: 40px;
@@ -123,12 +124,7 @@ main{
 }
 
 .btn-primary{
-    background-color:#5C6F98;
-    border-color: transparent;
-    width: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5px;
+    @extend %boton-registro;
 }
 
 
@@ -148,7 +144,7 @@ main{
     text-align: center;
     font-size: 22px;
     font-weight: 800;
-    background-color: #232C3A;
+    background-color: $coloruno;
     padding: 20px;
     color: #fff;
 }
@@ -175,7 +171,7 @@ main{
     text-align: center;
     font-size: 22px;
     font-weight: 800;
-    background-color: #232C3A;
+    background-color: $coloruno;
     padding: 35px;
     color: #fff;
 
@@ -184,7 +180,7 @@ main{
     text-align: center;
     font-size: 22px;
     font-weight: 800;
-    background-color: #232C3A;
+    background-color: $coloruno;
     padding: 20px;
     color: #fff;
 }
@@ -192,7 +188,7 @@ main{
     text-align: center;
     font-size: 22px;
     font-weight: 800;
-    background-color: #232C3A;
+    background-color: $coloruno;
     padding: 20px;
     color: #fff;
 }
@@ -282,5 +278,4 @@ main{
     }
 
 }
-
 

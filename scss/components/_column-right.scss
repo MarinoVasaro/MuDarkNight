@@ -1,3 +1,4 @@
+@import '../base/mixins';
 .panel-right{
     padding-left: 25px;
 }
@@ -104,7 +105,7 @@
     text-decoration: none;
 }
 .item-shop:hover{
-    transform: scale(1.05);
+    @include animacion(scale(1.05));
     transition: .3s;
 }
 .item-shop a:focus{

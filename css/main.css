@@ -700,6 +700,10 @@ footer a {
   box-sizing: border-box;
 }
 
+.disclaimer {
+  display: none;
+}
+
 html {
   cursor: url(../multimedia/imagenes/cursor.cur), auto;
 }

@@ -206,6 +206,7 @@
                   </div>
                   <!-- INICIO DE ITEM SHOP -->
                   <div class=" container-fluid main-shop">
+                    <img src="./multimedia/imagenes/carrito.png" class="logo_carrito" alt="logo carrito" >
                     <p class="botones-shop">
                       <!-- BOTON DARK KING -->
                       <button class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Dark King</button>
@@ -218,6 +219,8 @@
                       <!-- BOTON DARK LORD -->
                       <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample5">Dark Lord</button>
                     </p>
+                    
+
                     <!-- TIENDA DESPLEGABLE -->
                     <div class="row">
                       <!-- DARK KING ITEM SHOP -->
@@ -234,18 +237,18 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Set Aschrow</h5>
                                   <p class="card-text">
-                                     Set +<input type="number" name="limonesusados" min="0" max="15" step="1"> <br>
-                                     Adicional Defense +<input type="number" name="limonesusados" min="0" max="24" step="4"><br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Item Excelent <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Luck <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Increase max hp 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Increase max mana 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Damage decrease 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Reflect Damage 5% <br>
-                                    <input type="checkbox" name="empleoactual" value="sinempleo"> Defense sucess rate 10% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto">Increase Zen 30%<br>
+                                     Set +<input type="number" name="setMas" min="0" max="15" step="1"> <br>
+                                     Adicional Defense +<input type="number" name="DefenseMas" min="0" max="24" step="4"><br>
+                                    <input type="checkbox" name="itemExe"> Item Excelent <br>
+                                    <input type="checkbox" name="luck"> Luck <br>
+                                    <input type="checkbox" name="hpIncrease" > Increase max hp 4% <br>
+                                    <input type="checkbox" name="manaIncrease"> Increase max mana 4% <br>
+                                    <input type="checkbox" name="dmgIncrease"> Damage decrease 4% <br>
+                                    <input type="checkbox" name="reflect"> Reflect Damage 5% <br>
+                                    <input type="checkbox" name="defenseRate"> Defense sucess rate 10% <br>
+                                    <input type="checkbox" name="zen">Increase Zen 30%<br>
                                   </p>
-                                  <a href="#" class="btn btn-primary">Sumar al carrito <br> $000</a>
+                                  <button href="#" id="botonSubirCarrito" class="btn btn-primary botonComprar">Sumar al carrito <br> $000</button>
                                 </div>
                               </div>
       
@@ -256,18 +259,18 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Set Dragon King</h5>
                                   <p class="card-text">
-                                    Set +<input type="number" name="limonesusados" min="0" max="15" step="1"> <br>
-                                     Adicional Defense +<input type="number" name="limonesusados" min="0" max="24" step="4"><br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Item Excelent <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Luck <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Increase max hp 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Increase max mana 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Damage decrease 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Reflect Damage 5% <br>
-                                    <input type="checkbox" name="empleoactual" value="sinempleo"> Defense sucess rate 10% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto">Increase Zen 30%<br>
+                                    Set +<input type="number" name="setMas" min="0" max="15" step="1"> <br>
+                                     Adicional Defense +<input type="number" name="DefenseMas" min="0" max="24" step="4"><br>
+                                     <input type="checkbox" name="itemExe"> Item Excelent <br>
+                                     <input type="checkbox" name="luck"> Luck <br>
+                                     <input type="checkbox" name="hpIncrease" > Increase max hp 4% <br>
+                                     <input type="checkbox" name="manaIncrease"> Increase max mana 4% <br>
+                                     <input type="checkbox" name="dmgIncrease"> Damage decrease 4% <br>
+                                     <input type="checkbox" name="reflect"> Reflect Damage 5% <br>
+                                     <input type="checkbox" name="defenseRate"> Defense sucess rate 10% <br>
+                                     <input type="checkbox" name="zen">Increase Zen 30%<br>
                                   </p>
-                                  <a href="#" class="btn btn-primary">Sumar al carrito <br> $000</a>
+                                  <button href="#" id="botonSubirCarrito" class="btn btn-primary botonComprar">Sumar al carrito <br> $000</button>
                                 </div>
                               </div>
                             </div>
@@ -277,18 +280,18 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Set Dark Phoenix</h5>
                                   <p class="card-text">
-                                    Set +<input type="number" name="limonesusados" min="0" max="15" step="1"> <br>
-                                     Adicional Defense +<input type="number" name="limonesusados" min="0" max="24" step="4"><br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Item Excelent <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Luck <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Increase max hp 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Increase max mana 4% <br> 
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Damage decrease 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Reflect Damage 5% <br>
-                                    <input type="checkbox" name="empleoactual" value="sinempleo"> Defense sucess rate 10% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto">Increase Zen 30%<br>
+                                    Set +<input type="number" name="setMas" min="0" max="15" step="1"> <br>
+                                     Adicional Defense +<input type="number" name="DefenseMas" min="0" max="24" step="4"><br>
+                                     <input type="checkbox" name="itemExe"> Item Excelent <br>
+                                     <input type="checkbox" name="luck"> Luck <br>
+                                     <input type="checkbox" name="hpIncrease" > Increase max hp 4% <br>
+                                     <input type="checkbox" name="manaIncrease"> Increase max mana 4% <br>
+                                     <input type="checkbox" name="dmgIncrease"> Damage decrease 4% <br>
+                                     <input type="checkbox" name="reflect"> Reflect Damage 5% <br>
+                                     <input type="checkbox" name="defenseRate"> Defense sucess rate 10% <br>
+                                     <input type="checkbox" name="zen">Increase Zen 30%<br>
                                   </p>
-                                  <a href="#" class="btn btn-primary">Sumar al carrito <br> $000</a>
+                                  <button href="#" id="botonSubirCarrito" class="btn btn-primary botonComprar">Sumar al carrito <br> $000</button>
                                 </div>
                               </div>
                             </div>
@@ -310,18 +313,18 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Set Venom</h5>
                                   <p class="card-text">
-                                     Set +<input type="number" name="limonesusados" min="0" max="15" step="1"> <br>
-                                     Adicional Defense +<input type="number" name="limonesusados" min="0" max="24" step="4"><br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Item Excelent <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Luck <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Increase max hp 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Increase max mana 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Damage decrease 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Reflect Damage 5% <br>
-                                    <input type="checkbox" name="empleoactual" value="sinempleo"> Defense sucess rate 10% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto">Increase Zen 30%<br>
+                                     Set +<input type="number" name="setMas" min="0" max="15" step="1"> <br>
+                                     Adicional Defense +<input type="number" name="DefenseMas" min="0" max="24" step="4"><br>
+                                     <input type="checkbox" name="itemExe"> Item Excelent <br>
+                                     <input type="checkbox" name="luck"> Luck <br>
+                                     <input type="checkbox" name="hpIncrease" > Increase max hp 4% <br>
+                                     <input type="checkbox" name="manaIncrease"> Increase max mana 4% <br>
+                                     <input type="checkbox" name="dmgIncrease"> Damage decrease 4% <br>
+                                     <input type="checkbox" name="reflect"> Reflect Damage 5% <br>
+                                     <input type="checkbox" name="defenseRate"> Defense sucess rate 10% <br>
+                                     <input type="checkbox" name="zen">Increase Zen 30%<br>
                                   </p>
-                                  <a href="#" class="btn btn-primary">Sumar al carrito <br> $000</a>
+                                  <button href="#" id="botonSubirCarrito" class="btn btn-primary botonComprar">Sumar al carrito <br> $000</button>
                                 </div>
                               </div>
       
@@ -332,18 +335,18 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Set Eclipse</h5>
                                   <p class="card-text">
-                                    Set +<input type="number" name="limonesusados" min="0" max="15" step="1"> <br>
-                                     Adicional Defense +<input type="number" name="limonesusados" min="0" max="24" step="4"><br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Item Excelent <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Luck <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Increase max hp 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Increase max mana 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Damage decrease 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Reflect Damage 5% <br>
-                                    <input type="checkbox" name="empleoactual" value="sinempleo"> Defense sucess rate 10% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto">Increase Zen 30%<br>
+                                    Set +<input type="number" name="setMas" min="0" max="15" step="1"> <br>
+                                     Adicional Defense +<input type="number" name="DefenseMas" min="0" max="24" step="4"><br>
+                                     <input type="checkbox" name="itemExe"> Item Excelent <br>
+                                     <input type="checkbox" name="luck"> Luck <br>
+                                     <input type="checkbox" name="hpIncrease" > Increase max hp 4% <br>
+                                     <input type="checkbox" name="manaIncrease"> Increase max mana 4% <br>
+                                     <input type="checkbox" name="dmgIncrease"> Damage decrease 4% <br>
+                                     <input type="checkbox" name="reflect"> Reflect Damage 5% <br>
+                                     <input type="checkbox" name="defenseRate"> Defense sucess rate 10% <br>
+                                     <input type="checkbox" name="zen">Increase Zen 30%<br>
                                   </p>
-                                  <a href="#" class="btn btn-primary">Sumar al carrito <br> $000</a>
+                                  <button href="#" id="botonSubirCarrito" class="btn btn-primary botonComprar">Sumar al carrito <br> $000</button>
                                 </div>
                               </div>
                             </div>
@@ -353,19 +356,19 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Set Dark Soul</h5>
                                   <p class="card-text">
-                                    Set +<input type="number" name="limonesusados" min="0" max="15" step="1"> <br>
-                                     Adicional Defense +<input type="number" name="limonesusados" min="0" max="24" step="4"><br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Item Excelent <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Luck <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Increase max hp 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Increase max mana 4% <br> 
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Damage decrease 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Reflect Damage 5% <br>
-                                    <input type="checkbox" name="empleoactual" value="sinempleo"> Defense sucess rate 10% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto">Increase Zen 30%<br>
+                                    Set +<input type="number" name="setMas" min="0" max="15" step="1"> <br>
+                                     Adicional Defense +<input type="number" name="DefenseMas" min="0" max="24" step="4"><br>
+                                     <input type="checkbox" name="itemExe"> Item Excelent <br>
+                                     <input type="checkbox" name="luck"> Luck <br>
+                                     <input type="checkbox" name="hpIncrease" > Increase max hp 4% <br>
+                                     <input type="checkbox" name="manaIncrease"> Increase max mana 4% <br>
+                                     <input type="checkbox" name="dmgIncrease"> Damage decrease 4% <br>
+                                     <input type="checkbox" name="reflect"> Reflect Damage 5% <br>
+                                     <input type="checkbox" name="defenseRate"> Defense sucess rate 10% <br>
+                                     <input type="checkbox" name="zen">Increase Zen 30%<br>
       
                                   </p>
-                                  <a href="#" class="btn btn-primary">Sumar al carrito <br> $000</a>
+                                  <button href="#" id="botonSubirCarrito" class="btn btn-primary botonComprar">Sumar al carrito <br> $000</button>
                                 </div>
                               </div>
                             </div>
@@ -386,18 +389,18 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Set Iris</h5>
                                   <p class="card-text">
-                                     Set +<input type="number" name="limonesusados" min="0" max="15" step="1"> <br>
-                                     Adicional Defense +<input type="number" name="limonesusados" min="0" max="24" step="4"><br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Item Excelent <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Luck <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Increase max hp 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Increase max mana 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Damage decrease 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Reflect Damage 5% <br>
-                                    <input type="checkbox" name="empleoactual" value="sinempleo"> Defense sucess rate 10% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto">Increase Zen 30%<br>
+                                     Set +<input type="number" name="setMas" min="0" max="15" step="1"> <br>
+                                     Adicional Defense +<input type="number" name="DefenseMas" min="0" max="24" step="4"><br>
+                                     <input type="checkbox" name="itemExe"> Item Excelent <br>
+                                     <input type="checkbox" name="luck"> Luck <br>
+                                     <input type="checkbox" name="hpIncrease" > Increase max hp 4% <br>
+                                     <input type="checkbox" name="manaIncrease"> Increase max mana 4% <br>
+                                     <input type="checkbox" name="dmgIncrease"> Damage decrease 4% <br>
+                                     <input type="checkbox" name="reflect"> Reflect Damage 5% <br>
+                                     <input type="checkbox" name="defenseRate"> Defense sucess rate 10% <br>
+                                     <input type="checkbox" name="zen">Increase Zen 30%<br>
                                   </p>
-                                  <a href="#" class="btn btn-primary">Sumar al carrito <br> $000</a>
+                                  <button href="#" id="botonSubirCarrito" class="btn btn-primary botonComprar">Sumar al carrito <br> $000</button>
                                 </div>
                               </div>
       
@@ -408,18 +411,18 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Set Sylpid Ray</h5>
                                   <p class="card-text">
-                                    Set +<input type="number" name="limonesusados" min="0" max="15" step="1"> <br>
-                                     Adicional Defense +<input type="number" name="limonesusados" min="0" max="24" step="4"><br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Item Excelent <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Luck <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Increase max hp 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Increase max mana 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Damage decrease 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Reflect Damage 5% <br>
-                                    <input type="checkbox" name="empleoactual" value="sinempleo"> Defense sucess rate 10% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto">Increase Zen 30%<br>
+                                    Set +<input type="number" name="setMas" min="0" max="15" step="1"> <br>
+                                     Adicional Defense +<input type="number" name="DefenseMas" min="0" max="24" step="4"><br>
+                                     <input type="checkbox" name="itemExe"> Item Excelent <br>
+                                     <input type="checkbox" name="luck"> Luck <br>
+                                     <input type="checkbox" name="hpIncrease" > Increase max hp 4% <br>
+                                     <input type="checkbox" name="manaIncrease"> Increase max mana 4% <br>
+                                     <input type="checkbox" name="dmgIncrease"> Damage decrease 4% <br>
+                                     <input type="checkbox" name="reflect"> Reflect Damage 5% <br>
+                                     <input type="checkbox" name="defenseRate"> Defense sucess rate 10% <br>
+                                     <input type="checkbox" name="zen">Increase Zen 30%<br>
                                   </p>
-                                  <a href="#" class="btn btn-primary">Sumar al carrito <br> $000</a>
+                                  <button href="#" id="botonSubirCarrito" class="btn btn-primary botonComprar">Sumar al carrito <br> $000</button>
                                 </div>
                               </div>
                             </div>
@@ -429,18 +432,18 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Set Divine</h5>
                                   <p class="card-text">
-                                    Set +<input type="number" name="limonesusados" min="0" max="15" step="1"> <br>
-                                     Adicional Defense +<input type="number" name="limonesusados" min="0" max="24" step="4"><br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Item Excelent <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Luck <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Increase max hp 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Increase max mana 4% <br> 
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Damage decrease 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Reflect Damage 5% <br>
-                                    <input type="checkbox" name="empleoactual" value="sinempleo"> Defense sucess rate 10% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto">Increase Zen 30%<br>
+                                    Set +<input type="number" name="setMas" min="0" max="15" step="1"> <br>
+                                     Adicional Defense +<input type="number" name="DefenseMas" min="0" max="24" step="4"><br>
+                                     <input type="checkbox" name="itemExe"> Item Excelent <br>
+                                     <input type="checkbox" name="luck"> Luck <br>
+                                     <input type="checkbox" name="hpIncrease" > Increase max hp 4% <br>
+                                     <input type="checkbox" name="manaIncrease"> Increase max mana 4% <br>
+                                     <input type="checkbox" name="dmgIncrease"> Damage decrease 4% <br>
+                                     <input type="checkbox" name="reflect"> Reflect Damage 5% <br>
+                                     <input type="checkbox" name="defenseRate"> Defense sucess rate 10% <br>
+                                     <input type="checkbox" name="zen">Increase Zen 30%<br>
                                   </p>
-                                  <a href="#" class="btn btn-primary">Sumar al carrito <br> $000</a>
+                                  <button href="#" id="botonSubirCarrito" class="btn btn-primary botonComprar">Sumar al carrito <br> $000</button>
                                 </div>
                               </div>
                             </div>                           
@@ -461,18 +464,18 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Set Valiant</h5>
                                   <p class="card-text">
-                                     Set +<input type="number" name="limonesusados" min="0" max="15" step="1"> <br>
-                                     Adicional Defense +<input type="number" name="limonesusados" min="0" max="24" step="4"><br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Item Excelent <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Luck <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Increase max hp 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Increase max mana 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Damage decrease 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Reflect Damage 5% <br>
-                                    <input type="checkbox" name="empleoactual" value="sinempleo"> Defense sucess rate 10% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto">Increase Zen 30%<br>
+                                     Set +<input type="number" name="setMas" min="0" max="15" step="1"> <br>
+                                     Adicional Defense +<input type="number" name="DefenseMas" min="0" max="24" step="4"><br>
+                                     <input type="checkbox" name="itemExe"> Item Excelent <br>
+                                     <input type="checkbox" name="luck"> Luck <br>
+                                     <input type="checkbox" name="hpIncrease" > Increase max hp 4% <br>
+                                     <input type="checkbox" name="manaIncrease"> Increase max mana 4% <br>
+                                     <input type="checkbox" name="dmgIncrease"> Damage decrease 4% <br>
+                                     <input type="checkbox" name="reflect"> Reflect Damage 5% <br>
+                                     <input type="checkbox" name="defenseRate"> Defense sucess rate 10% <br>
+                                     <input type="checkbox" name="zen">Increase Zen 30%<br>
                                   </p>
-                                  <a href="#" class="btn btn-primary">Sumar al carrito <br> $000</a>
+                                  <button href="#" id="botonSubirCarrito" class="btn btn-primary botonComprar">Sumar al carrito <br> $000</button>
                                 </div>
                               </div>     
                             </div>
@@ -482,18 +485,18 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Set Volcano</h5>
                                   <p class="card-text">
-                                    Set +<input type="number" name="limonesusados" min="0" max="15" step="1"> <br>
-                                     Adicional Defense +<input type="number" name="limonesusados" min="0" max="24" step="4"><br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Item Excelent <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Luck <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Increase max hp 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Increase max mana 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Damage decrease 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Reflect Damage 5% <br>
-                                    <input type="checkbox" name="empleoactual" value="sinempleo"> Defense sucess rate 10% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto">Increase Zen 30%<br>
+                                    Set +<input type="number" name="setMas" min="0" max="15" step="1"> <br>
+                                     Adicional Defense +<input type="number" name="DefenseMas" min="0" max="24" step="4"><br>
+                                     <input type="checkbox" name="itemExe"> Item Excelent <br>
+                                     <input type="checkbox" name="luck"> Luck <br>
+                                     <input type="checkbox" name="hpIncrease" > Increase max hp 4% <br>
+                                     <input type="checkbox" name="manaIncrease"> Increase max mana 4% <br>
+                                     <input type="checkbox" name="dmgIncrease"> Damage decrease 4% <br>
+                                     <input type="checkbox" name="reflect"> Reflect Damage 5% <br>
+                                     <input type="checkbox" name="defenseRate"> Defense sucess rate 10% <br>
+                                     <input type="checkbox" name="zen">Increase Zen 30%<br>
                                   </p>
-                                  <a href="#" class="btn btn-primary">Sumar al carrito <br> $000</a>
+                                  <button href="#" id="botonSubirCarrito" class="btn btn-primary botonComprar">Sumar al carrito <br> $000</button>
                                 </div>
                               </div>
                             </div>
@@ -503,18 +506,18 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Set Hurricane</h5>
                                   <p class="card-text">
-                                    Set +<input type="number" name="limonesusados" min="0" max="15" step="1"> <br>
-                                     Adicional Defense +<input type="number" name="limonesusados" min="0" max="24" step="4"><br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Item Excelent <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Luck <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Increase max hp 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Increase max mana 4% <br> 
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto"> Damage decrease 4% <br>
-                                    <input type="checkbox" name="empleoactual" value="mediodia"> Reflect Damage 5% <br>
-                                    <input type="checkbox" name="empleoactual" value="sinempleo"> Defense sucess rate 10% <br>
-                                    <input type="checkbox" name="empleoactual" value="tiempocompleto">Increase Zen 30%<br>     
+                                    Set +<input type="number" name="setMas" min="0" max="15" step="1"> <br>
+                                     Adicional Defense +<input type="number" name="DefenseMas" min="0" max="24" step="4"><br>
+                                     <input type="checkbox" name="itemExe"> Item Excelent <br>
+                                     <input type="checkbox" name="luck"> Luck <br>
+                                     <input type="checkbox" name="hpIncrease" > Increase max hp 4% <br>
+                                     <input type="checkbox" name="manaIncrease"> Increase max mana 4% <br>
+                                     <input type="checkbox" name="dmgIncrease"> Damage decrease 4% <br>
+                                     <input type="checkbox" name="reflect"> Reflect Damage 5% <br>
+                                     <input type="checkbox" name="defenseRate"> Defense sucess rate 10% <br>
+                                     <input type="checkbox" name="zen">Increase Zen 30%<br>     
                                   </p>
-                                  <a href="#" class="btn btn-primary">Sumar al carrito <br> $000</a>
+                                  <button href="#" id="botonSubirCarrito" class="btn btn-primary botonComprar">Sumar al carrito <br> $000</button>
                                 </div>
                               </div>
                             </div>                         
@@ -522,80 +525,79 @@
                         </div>
                       </div>
                       <!-- DARK LORD ITEM SHOP -->
-                    <div class="col-12">
-                      <div class="collapse multi-collapse" id="multiCollapseExample5">
-                        <div class="card card-body">
-                          <p>Todos los sets por default se entregan no-exe +0, son totalmente personalizables y cada opcion le cambiara su valor.</p>
-                          <p>Compras realizadas los fines de semana seran depositadas en el baul en las siguentes 24hs habiles.</p>
-                        </div>
-                        <div class="row">
-                          <div class="col">
-                            <div class="card" style="width: 14rem;">
-                              <img src="./multimedia/imagenes/GloriousSet.jpg" class="card-img-top" alt="Set Glorius">
-                              <div class="card-body">
-                                <h5 class="card-title">Set Glorius</h5>
-                                <p class="card-text">
-                                   Set +<input type="number" name="limonesusados" min="0" max="15" step="1"> <br>
-                                   Adicional Defense +<input type="number" name="limonesusados" min="0" max="24" step="4"><br>
-                                  <input type="checkbox" name="empleoactual" value="tiempocompleto"> Item Excelent <br>
-                                  <input type="checkbox" name="empleoactual" value="mediodia"> Luck <br>
-                                  <input type="checkbox" name="empleoactual" value="tiempocompleto"> Increase max hp 4% <br>
-                                  <input type="checkbox" name="empleoactual" value="mediodia"> Increase max mana 4% <br>
-                                  <input type="checkbox" name="empleoactual" value="tiempocompleto"> Damage decrease 4% <br>
-                                  <input type="checkbox" name="empleoactual" value="mediodia"> Reflect Damage 5% <br>
-                                  <input type="checkbox" name="empleoactual" value="sinempleo"> Defense sucess rate 10% <br>
-                                  <input type="checkbox" name="empleoactual" value="tiempocompleto">Increase Zen 30%<br>
-                                </p>
-                                <a href="#" class="btn btn-primary">Sumar al carrito <br> $000</a>
-                              </div>
-                            </div>
+                      <div class="col-12">
+                        <div class="collapse multi-collapse" id="multiCollapseExample5">
+                          <div class="card card-body">
+                            <p>Todos los sets por default se entregan no-exe +0, son totalmente personalizables y cada opcion le cambiara su valor.</p>
+                            <p>Compras realizadas los fines de semana seran depositadas en el baul en las siguentes 24hs habiles.</p>
                           </div>
-                          <div class="col">
-                            <div class="card" style="width: 14rem;">
-                              <img src="./multimedia/imagenes/sunlightSet.jpg" class="card-img-top" alt="Set Sunlight">
-                              <div class="card-body">
-                                <h5 class="card-title">Set Sunlight</h5>
-                                <p class="card-text">
-                                  Set +<input type="number" name="limonesusados" min="0" max="15" step="1"> <br>
-                                   Adicional Defense +<input type="number" name="limonesusados" min="0" max="24" step="4"><br>
-                                  <input type="checkbox" name="empleoactual" value="tiempocompleto"> Item Excelent <br>
-                                  <input type="checkbox" name="empleoactual" value="mediodia"> Luck <br>
-                                  <input type="checkbox" name="empleoactual" value="tiempocompleto"> Increase max hp 4% <br>
-                                  <input type="checkbox" name="empleoactual" value="mediodia"> Increase max mana 4% <br>
-                                  <input type="checkbox" name="empleoactual" value="tiempocompleto"> Damage decrease 4% <br>
-                                  <input type="checkbox" name="empleoactual" value="mediodia"> Reflect Damage 5% <br>
-                                  <input type="checkbox" name="empleoactual" value="sinempleo"> Defense sucess rate 10% <br>
-                                  <input type="checkbox" name="empleoactual" value="tiempocompleto">Increase Zen 30%<br>
-                                </p>
-                                <a href="#" class="btn btn-primary">Sumar al carrito <br> $000</a>
+                          <div class="row">
+                            <div class="col">
+                              <div class="card" style="width: 14rem;">
+                                <img src="./multimedia/imagenes/GloriousSet.jpg" class="card-img-top" alt="Set Valiant">
+                                <div class="card-body">
+                                  <h5 class="card-title">Set Glorious</h5>
+                                  <p class="card-text">
+                                     Set +<input type="number" name="setMas" min="0" max="15" step="1"> <br>
+                                     Adicional Defense +<input type="number" name="DefenseMas" min="0" max="24" step="4"><br>
+                                     <input type="checkbox" name="itemExe"> Item Excelent <br>
+                                     <input type="checkbox" name="luck"> Luck <br>
+                                     <input type="checkbox" name="hpIncrease" > Increase max hp 4% <br>
+                                     <input type="checkbox" name="manaIncrease"> Increase max mana 4% <br>
+                                     <input type="checkbox" name="dmgIncrease"> Damage decrease 4% <br>
+                                     <input type="checkbox" name="reflect"> Reflect Damage 5% <br>
+                                     <input type="checkbox" name="defenseRate"> Defense sucess rate 10% <br>
+                                     <input type="checkbox" name="zen">Increase Zen 30%<br>
+                                  </p>
+                                  <button href="#" id="botonSubirCarrito" class="btn btn-primary botonComprar">Sumar al carrito <br> $000</button>
+                                </div>
+                              </div>     
+                            </div>
+                            <div class="col">
+                              <div class="card" style="width: 14rem;">
+                                <img src="./multimedia/imagenes/sunlightSet.jpg" class="card-img-top" alt="Set Volcano">
+                                <div class="card-body">
+                                  <h5 class="card-title">Set Sunligth</h5>
+                                  <p class="card-text">
+                                    Set +<input type="number" name="setMas" min="0" max="15" step="1"> <br>
+                                     Adicional Defense +<input type="number" name="DefenseMas" min="0" max="24" step="4"><br>
+                                     <input type="checkbox" name="itemExe"> Item Excelent <br>
+                                     <input type="checkbox" name="luck"> Luck <br>
+                                     <input type="checkbox" name="hpIncrease" > Increase max hp 4% <br>
+                                     <input type="checkbox" name="manaIncrease"> Increase max mana 4% <br>
+                                     <input type="checkbox" name="dmgIncrease"> Damage decrease 4% <br>
+                                     <input type="checkbox" name="reflect"> Reflect Damage 5% <br>
+                                     <input type="checkbox" name="defenseRate"> Defense sucess rate 10% <br>
+                                     <input type="checkbox" name="zen">Increase Zen 30%<br>
+                                  </p>
+                                  <button href="#" id="botonSubirCarrito" class="btn btn-primary botonComprar">Sumar al carrito <br> $000</button>
+                                </div>
                               </div>
                             </div>
+                            <div class="col">
+                              <div class="card" style="width: 14rem;">
+                                <img src="./multimedia/imagenes/darksteelSet.jpg" class="card-img-top" alt="Set Hurricane">
+                                <div class="card-body">
+                                  <h5 class="card-title">Set darkSteel</h5>
+                                  <p class="card-text">
+                                    Set +<input type="number" name="setMas" min="0" max="15" step="1"> <br>
+                                     Adicional Defense +<input type="number" name="DefenseMas" min="0" max="24" step="4"><br>
+                                     <input type="checkbox" name="itemExe"> Item Excelent <br>
+                                     <input type="checkbox" name="luck"> Luck <br>
+                                     <input type="checkbox" name="hpIncrease" > Increase max hp 4% <br>
+                                     <input type="checkbox" name="manaIncrease"> Increase max mana 4% <br>
+                                     <input type="checkbox" name="dmgIncrease"> Damage decrease 4% <br>
+                                     <input type="checkbox" name="reflect"> Reflect Damage 5% <br>
+                                     <input type="checkbox" name="defenseRate"> Defense sucess rate 10% <br>
+                                     <input type="checkbox" name="zen">Increase Zen 30%<br>     
+                                  </p>
+                                  <button href="#" id="botonSubirCarrito" class="btn btn-primary botonComprar">Sumar al carrito <br> $000</button>
+                                </div>
+                              </div>
+                            </div>                         
                           </div>
-                          <div class="col">
-                            <div class="card" style="width: 14rem;">
-                              <img src="./multimedia/imagenes/darksteelSet.jpg" class="card-img-top" alt="Set Dark Steel">
-                              <div class="card-body">
-                                <h5 class="card-title">Set Dark Steel</h5>
-                                <p class="card-text">
-                                  Set +<input type="number" name="limonesusados" min="0" max="15" step="1"> <br>
-                                   Adicional Defense +<input type="number" name="limonesusados" min="0" max="24" step="4"><br>
-                                  <input type="checkbox" name="empleoactual" value="tiempocompleto"> Item Excelent <br>
-                                  <input type="checkbox" name="empleoactual" value="mediodia"> Luck <br>
-                                  <input type="checkbox" name="empleoactual" value="tiempocompleto"> Increase max hp 4% <br>
-                                  <input type="checkbox" name="empleoactual" value="mediodia"> Increase max mana 4% <br> 
-                                  <input type="checkbox" name="empleoactual" value="tiempocompleto"> Damage decrease 4% <br>
-                                  <input type="checkbox" name="empleoactual" value="mediodia"> Reflect Damage 5% <br>
-                                  <input type="checkbox" name="empleoactual" value="sinempleo"> Defense sucess rate 10% <br>
-                                  <input type="checkbox" name="empleoactual" value="tiempocompleto">Increase Zen 30%<br>
-                                </p>
-                                <a href="#" class="btn btn-primary">Sumar al carrito <br> $000</a>
-                              </div>
-                            </div>
-                          </div>                   
                         </div>
                       </div>
-                    </div>
-                    </div>
                   </div>
                 </div>
     </section>
@@ -667,6 +669,7 @@
           </div>
 </section>
 </footer>
+<script src="/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>

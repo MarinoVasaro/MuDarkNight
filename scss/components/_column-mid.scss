@@ -235,7 +235,15 @@ main{
 
 /* ITEM SHOP */
 
-   
+.logo_carrito{
+    filter: invert(100%);
+    width: 35px;
+    height: 35px;
+    margin-left: 95%;
+    margin-bottom:10px;
+}
+
+ 
 
     .botones-shop{
         display: flex;

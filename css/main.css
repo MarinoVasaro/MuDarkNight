@@ -362,6 +362,16 @@ main {
 }
 
 /* ITEM SHOP */
+.tdShop {
+  table-layout: fixed;
+  text-align: center;
+  margin-left: 3vw;
+  width: 100vw;
+  border: 1px solid #ddd;
+  padding: 8px;
+  color: #fff;
+}
+
 .logo_carrito {
   filter: invert(100%);
   width: 35px;

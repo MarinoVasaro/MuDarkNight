@@ -241,7 +241,8 @@ main{
     text-align: center;
     margin-left: 3vw;
     width: 100vw;
-    border: 1px solid #ddd;
+    border-left: 1px dotted #fff;
+    border-right:1px dotted #fff; ;
     padding: 8px;
     color: #fff;
 }

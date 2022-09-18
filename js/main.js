@@ -168,21 +168,19 @@ leerLocalStorageCompra(){
         <h5 style="color:#fff;">${producto.nombre}</h5>
     </td>
     <td class="tdShop">
-        <h6 style="color:#fff;">${producto.precio}</h6>
+        <h6 style="color:#fff;">$${producto.precio}</h6>
     </td>
     <td class="tdShop">
         <input type="number" class="form-control cantidad" min="1" value="${producto.cantidad}">
     </td>
-    <td>${producto.precio * producto.cantidad}</td>
+    <td class="tdShop">$${producto.precio * producto.cantidad}</td>
     <td class="tdShop">
-        <a href="#" class="borrar-producto fas fa-times-circle fa-3x" data-id="${producto.id}"></a>
+        <a href="#" class="borrar-producto fas fa-times-circle fa-2x" data-id="${producto.id}"></a>
     </td>
     `;
     listaCompra.appendChild(row);
     });
 }
-
-
 }
 
 

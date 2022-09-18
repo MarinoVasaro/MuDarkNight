@@ -20,6 +20,7 @@ class Carrito{
                 id: producto.querySelector('button').getAttribute('data-id'),
                 cantidad : 1
             }
+            //Si esta repetido no permitir sumar otro
             let productosLS;
             productosLS = this.obtenerProductosLocalStorage();
             productosLS.forEach(function (productoLS){
@@ -41,7 +42,7 @@ class Carrito{
 }
 
 
-//INSERTAR AL CARRITO
+//INSERTAR AL CARRITO Y CREAR LOS ELEMENTOS DE LA TABLA
 insertarCarrito(producto){
     const row = document.createElement('tr');
     row.innerHTML = 
@@ -87,7 +88,7 @@ vaciarCarrito(e){
 
     return false
 }
-
+ //Guardar productos seleccionados en LS
 guardarProductosLocalStorage(producto){
     let productos;
     //Toma valor de un arreglo con datos del LS
@@ -103,16 +104,18 @@ obtenerProductosLocalStorage(){
     let productoLS;
 
     //Comprobar si hay algo en LS
+    //Vacio retorna array vacio
     if(localStorage.getItem('productos') === null){
         productoLS = [];
     }
     else {
         productoLS = JSON.parse(localStorage.getItem('productos'));
     }
+    //Si hay algo retorna el producto.
     return productoLS;
 }
 
-   //Eliminar producto por ID del LS
+   //Eliminar producto por ID del LS (en la linea 76 lo llamamos asi reutilizo el mismo boton) 
    eliminarProductoLocalStorage(productoID){
     let productosLS;
     productosLS = this.obtenerProductosLocalStorage();
@@ -151,18 +154,20 @@ leerLocalStorage(){
     });
 }
 
-
+//Vaciar carrito (llamado en linea 87 para reutilizar boton)
 vaciarLocalStorage(){
     localStorage.clear();
 }
 
-//Enviar pedido a otro html
+//redireccionar a otro html
 
 procesarPedido(e){
     e.preventDefault();
+    //Si no hay nada en el carrito devolver error
     if(this.obtenerProductosLocalStorage().length === 0){
         swal('ERROR', 'Su carrito esta vacio', 'error');
     }
+    //Si hay algo redireccionar a compra.html
     else{
         location.href ="compra.html";
     }
@@ -170,9 +175,12 @@ procesarPedido(e){
     
 }
 
+//Esto es lo que se va a imprimir en el html de compra al finalizar la compra..
 leerLocalStorageCompra(){
     let productosLS;
+    //Obtenemos los productos del localstorage
     productosLS = this.obtenerProductosLocalStorage();
+    //Los recorremos y los imprimimos.
     productosLS.forEach(function (producto){
         const row = document.createElement('tr');
     row.innerHTML = 

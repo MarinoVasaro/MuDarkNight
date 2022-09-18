@@ -10,11 +10,11 @@ cargarEventos();
 
 function cargarEventos(){
 
-    document.addEventListener('DOMContentLoaded', compra.leerLocalStorageCompra());
-    carrito.addEventListener('click', (e)=>{compra.eliminarProducto(e)});
-    compra.calcularTotal();
+    document.addEventListener('DOMContentLoaded', compra.leerLocalStorageCompra()); //Funcion para cargar la compra al entrar a este html
+    carrito.addEventListener('click', (e)=>{compra.eliminarProducto(e)}); //boton de eliminar productos.
+    compra.calcularTotal(); //Suma de los valores para comprar.
 
-    ProcesarCompraBtn.addEventListener('click',ProcesarCompra);
+    ProcesarCompraBtn.addEventListener('click',ProcesarCompra); //Boton de procesar compra realizar la funcion de aqui abajo
 
 }
 

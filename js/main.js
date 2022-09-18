@@ -20,9 +20,23 @@ class Carrito{
                 id: producto.querySelector('button').getAttribute('data-id'),
                 cantidad : 1
             }
+            let productosLS;
+            productosLS = this.obtenerProductosLocalStorage();
+            productosLS.forEach(function (productoLS){
+                if(productoLS.id === infoProducto.id){
+                    productosLS = productoLS.id;
+                }
+            });
+    
+            if(productosLS === infoProducto.id){
+                swal('ERROR','Este set ya fue agregado al carrito', 'error')
+            }
+            else {
+                this.insertarCarrito(infoProducto);
+            }
             
 
-            this.insertarCarrito(infoProducto);
+            
             
 }
 
@@ -31,16 +45,16 @@ class Carrito{
 insertarCarrito(producto){
     const row = document.createElement('tr');
     row.innerHTML = 
-    `<td>
+    `<td class="tdShop">
         <img src="${producto.imagen}" width=100>
     </td>
-    <td>
+    <td class="tdShop">
         <h5 style="color:#fff;">${producto.nombre}</h5>
     </td>
-    <td>
+    <td class="tdShop">
         <h6 style="color:#fff;">${producto.precio}</h6>
     </td>
-    <td>
+    <td class="tdShop">
         <a href="#" class="borrar-producto fas fa-times-circle" data-id="${producto.id}"></a>
     </td>
     `;
@@ -59,6 +73,7 @@ eliminarProducto(e){
         productoID = producto.querySelector('a').getAttribute('data-id');
     }
     this.eliminarProductoLocalStorage(productoID);
+    this.calcularTotal();
 
 
 }
@@ -171,9 +186,10 @@ leerLocalStorageCompra(){
         <h6 style="color:#fff;">$${producto.precio}</h6>
     </td>
     <td class="tdShop">
-        <input type="number" class="form-control cantidad" min="1" value="${producto.cantidad}">
+        <input type="number" class="form-control cantidad" min="1" value=${producto.cantidad}>
     </td>
-    <td class="tdShop">$${producto.precio * producto.cantidad}</td>
+    <td class="tdShop" id='subtotales'>
+    ${producto.precio * producto.cantidad}</td>
     <td class="tdShop">
         <a href="#" class="borrar-producto fas fa-times-circle fa-2x" data-id="${producto.id}"></a>
     </td>
@@ -181,8 +197,27 @@ leerLocalStorageCompra(){
     listaCompra.appendChild(row);
     });
 }
+
+//CALCULAR TOTAL
+calcularTotal(){
+    let productosLS;
+    let total = 0, iva = 0, subtotal = 0;
+    productosLS = this.obtenerProductosLocalStorage();
+    for(let i = 0; i < productosLS.length; i++){
+        let element = Number(productosLS[i].precio * productosLS[i].cantidad);
+        total = total + element;
+        
+    }
+    //  Sacar IVA
+    iva = parseFloat(total * 0.21).toFixed(2);
+    subtotal = parseFloat(total-iva).toFixed(2);
+
+    document.getElementById('subtotal').innerHTML = "$ " + subtotal;
+    document.getElementById('iva').innerHTML = "$ " + iva;
+    document.getElementById('total').value = "$" + total.toFixed(2);
 }
 
+}
 
 
 
@@ -225,6 +260,9 @@ function ProcesandoCompra(){
 }
 
 
+function RedireccionShop(){
+    window.location = "itemshop.html";
+}
 
 
 

@@ -12,6 +12,7 @@ function cargarEventos(){
 
     document.addEventListener('DOMContentLoaded', compra.leerLocalStorageCompra()); //Funcion para cargar la compra al entrar a este html
     carrito.addEventListener('click', (e)=>{compra.eliminarProducto(e)}); //boton de eliminar productos.
+    carrito.addEventListener('change', (e)=>{compra.cambiarCantidad(e)});
     compra.calcularTotal(); //Suma de los valores para comprar.
 
     ProcesarCompraBtn.addEventListener('click',ProcesarCompra); //Boton de procesar compra realizar la funcion de aqui abajo
@@ -27,18 +28,12 @@ function ProcesarCompra(e){
             window.location = "itemshop.html";
         });
     }
-    //Si datos estan vacios no permitir avanzar
-    else if(cliente.value === '' || pass.value === '' || pin.value === ''){
-        swal('ERROR', 'Aun hay datos incompletos.', 'error' )
-    }
     else{
         swal('Finalizado', 'Su compra se realizo correctamente', 'success')
         .then(function(){
             window.location = "index.html"
         });
-        
-        
-       
+        compra.vaciarLocalStorage();
     }
 
 

@@ -13,4 +13,5 @@ function cargarEventos(){
     vaciarCarritoBtn.addEventListener('click', (e)=>{carro.vaciarCarrito(e)}); //VACIAR CARRITO
     document.addEventListener('DOMContentLoaded', carro.leerLocalStorage()); //MANTENER LA COMPRA AL CAMBIAR DE PAGINA
     procesarPedidoBtn.addEventListener('click', (e)=>{carro.procesarPedido(e)}); //Procesar pedido boton
+    carrito.addEventListener('change', (e)=>{carro.cambiarCantidad(e)});
 }

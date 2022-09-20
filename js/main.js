@@ -18,7 +18,7 @@ class Carrito{
                 nombre : producto.querySelector('h5').textContent,
                 precio : producto.querySelector('.botonComprar span').textContent,
                 id: producto.querySelector('button').getAttribute('data-id'),
-                cantidad : 1
+                cantidad : producto.querySelector('.cantidad').value
             }
             //Si esta repetido no permitir sumar otro
             let productosLS;
@@ -74,6 +74,33 @@ eliminarProducto(e){
         productoID = producto.querySelector('a').getAttribute('data-id');
     }
     this.eliminarProductoLocalStorage(productoID);
+    this.calcularTotal();
+
+}
+//Cambiar cantidad en html compra
+cambiarCantidad(e){
+    //console.log(e)
+    e.preventDefault();
+    let producto, productoID, cantidad;
+    let productosLS;
+    if(e.target.classList.contains('cantidad')){
+        producto = e.target.parentElement.parentElement;
+        productoID = producto.querySelector('input').getAttribute('data-id');
+        cantidad = producto.querySelector('input').value;
+        productosLS = this.obtenerProductosLocalStorage();
+        productosLS.forEach(function(productoLS, index){
+        if(productoLS.id === productoID){
+                 productoLS.cantidad = cantidad;
+                 
+            }
+        })
+        
+    }
+      localStorage.setItem('productos', JSON.stringify(productosLS));
+    listaCompra.innerHTML="";
+    this.leerLocalStorageCompra();
+    //location.reload()
+    //this.eliminarProductoLocalStorage(productoID);
     this.calcularTotal();
 
 
@@ -194,16 +221,23 @@ leerLocalStorageCompra(){
         <h6 style="color:#fff;">$${producto.precio}</h6>
     </td>
     <td class="tdShop">
-        <input type="number" class="form-control cantidad" min="1" value=${producto.cantidad}>
+        <input type="number" class="cantidad" min="1" value="${producto.cantidad}" data-id="${producto.id}">
     </td>
     <td class="tdShop" id='subtotales'>
-    ${producto.precio * producto.cantidad}</td>
+    $${producto.precio * producto.cantidad}
+    </td>
     <td class="tdShop">
         <a href="#" class="borrar-producto fas fa-times-circle fa-2x" data-id="${producto.id}"></a>
     </td>
+    
     `;
     listaCompra.appendChild(row);
     });
+}
+
+cambiar_unidades(id){
+    let valorUnidades = document.getElementById('unidades_'+id).value;
+    alert(valorUnidades);
 }
 
 //CALCULAR TOTAL
@@ -224,6 +258,8 @@ calcularTotal(){
     document.getElementById('iva').innerHTML = "$ " + iva;
     document.getElementById('total').value = "$" + total.toFixed(2);
 }
+
+
 
 }
 
@@ -254,11 +290,23 @@ calcularTotal(){
 
 /* ALERTAS */
 function alertaCarrito(){
-    swal('Set agregado al carrito', '', 'success');
+    swal({
+        title: "Excelente!",
+        text: "El set fue agregado al carrito!",
+        icon: "success",
+        button: false,
+        timer:2000
+      });
 
 }
 function alertaCarritoBorrado(){
-    swal('Su carrito fue limpiado', '', 'info');
+    swal({
+        title: "Realizado!",
+        text: "El carrito fue eliminado!",
+        icon: "info",
+        button: false,
+        timer:2000
+      });
 
 }
 

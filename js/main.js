@@ -18,7 +18,7 @@ class Carrito{
                 nombre : producto.querySelector('h5').textContent,
                 precio : producto.querySelector('.botonComprar span').textContent,
                 id: producto.querySelector('button').getAttribute('data-id'),
-                cantidad : producto.querySelector('.cantidad').value
+                cantidad : producto.querySelector('.cantidad').textContent
             }
             //Si esta repetido no permitir sumar otro
             let productosLS;
@@ -235,10 +235,7 @@ leerLocalStorageCompra(){
     });
 }
 
-cambiar_unidades(id){
-    let valorUnidades = document.getElementById('unidades_'+id).value;
-    alert(valorUnidades);
-}
+
 
 //CALCULAR TOTAL
 calcularTotal(){

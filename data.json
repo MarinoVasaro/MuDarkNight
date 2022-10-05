@@ -1,0 +1,5 @@
+[
+  { "nombre": "Blood Castle", "intervalo": "2HS", "lvlMinimo": 250 , "id": 1 },
+  { "nombre": "Chaos Castle", "intervalo": "3HS", "lvlMinimo": 300 , "id": 2 },
+  { "nombre": "Devil Scuare", "intervalo": "4HS", "lvlMinimo": 400 ,"id": 3 }
+]

@@ -540,6 +540,10 @@ main {
 }
 
 /* ===============Publicidad============= */
+.listaFetch {
+  list-style: none;
+}
+
 .publicidad {
   margin-top: 10px;
   margin-left: 20%;

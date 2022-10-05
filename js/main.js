@@ -260,31 +260,6 @@ calcularTotal(){
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ALERTAS */
 function alertaCarrito(){
     swal({
